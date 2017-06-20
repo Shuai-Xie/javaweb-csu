@@ -1,0 +1,451 @@
+* { /*清除默认*/
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; /*子标签中如果不指定font-size，就继承body的12px*/
+    background: url(../images/bg.jpg) repeat-x;
+    /*repeat-x: 只在x轴上重复，比图片高度大的部分仍是默认的白色*/
+    /*repeat-y: 只在y轴上重复，网页最左边竖着排列2个bg*/
+}
+
+/*顶部*/
+.top {
+    width: 950px;
+    height: 112px;
+    margin: 0 auto; /*左右居中*/
+}
+
+img {
+    border: 0;
+}
+
+.auto {
+    margin: 0 auto;
+}
+
+/*font left*/
+.fl {
+    float: left;
+    display: inline;
+}
+
+/*font right*/
+.fr {
+    float: right;
+    display: inline;
+}
+
+/*logo*/
+.csu-logo {
+    width: 326px;
+    height: 112px;
+    float: left;
+}
+
+.top-right {
+    width: 460px;
+    height: 112px;
+    float: right;
+    position: relative;
+}
+
+.right-line1 {
+    width: 460px;
+    height: 38px;
+    margin-left: 5px;
+}
+
+/*未来学生 在校学生 教职员工 校友校董*/
+.ycszb {
+    width: 250px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+}
+
+/*未来学生 在校学生 教职员工 校友校董*/
+a.ld {
+    font-size: 12px;
+    text-decoration: none; /*去掉超链接格式*/
+    color: #FFFFFF;
+    padding: 0 4px; /*左右4px*/
+}
+
+/*hover选择器选中ld元素，设置悬停字体颜色*/
+a.ld:hover {
+    color: #fe7000;
+}
+
+/*教育机构 研究机构*/
+#wrap {
+    width: 208px;
+    float: right;
+}
+
+#main_nav {
+    height: 30px;
+    overflow: visible;
+    padding-top: 8px;
+}
+
+/*2个li*/
+/*教育机构 研究机构*/
+#main_nav ul {
+    font-size: 13px;
+    list-style: none;
+}
+
+/*教育机构 研究机构*/
+/*li属性样式*/
+#main_nav li {
+    float: left; /*使得2个li可以浮动排在一行*/
+    margin-right: 4px;
+    width: 94px;
+    height: 21px;
+    background: url(../images/jyjgli.jpg); /*背景图*/
+    position: relative;
+    z-index: 999; /*设置堆叠顺序*/
+    text-align: center;
+}
+
+/*li中包含的超链接*/
+/*教育机构*/
+#main_nav li a {
+    color: #555;
+    display: block;
+    /*与li等宽高*/
+    /*width: 94px; */
+    /*height: 21px;*/
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+/*li ul li a*/
+/*文学与新闻传播学院*/
+#main_nav li ul li a {
+    font-size: 12px;
+    width: 145px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+    color: #fff;
+}
+
+/*教育机构*/
+#main_nav li ul.jyjgli {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 350px;
+    height: 410px;
+    padding: 15px 5px 15px 18px;
+    background: #396f98;
+    border: 1px solid white;
+    display: none;
+    z-index: 999;
+}
+
+/*研究机构*/
+#main_nav li ul.yjjgli {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 240px;
+    height: 366px;
+    padding: 15px 8px 15px 16px;
+    background: #396f98;
+    border: 1px solid white;
+    display: none;
+    z-index: 999;
+}
+
+/*hover需要上下级*/
+/*li:hover ul*/
+#main_nav li:hover ul {
+    display: block;
+}
+
+#main_nav li ul.jyjgli li {
+    float: left;
+    text-align: left;
+    background: none;
+    width: 145px;
+    height: 25px;
+    border-bottom: #fff 1px solid;
+    margin-right: 12px;
+}
+
+#main_nav li ul.yjjgli li {
+    float: left;
+    text-align: left;
+    background: none;
+    width: 210px;
+    height: 25px;
+    border-bottom: #fff 1px solid;
+    margin-right: 12px;
+}
+
+/*li中超链接*/
+#main_nav li ul.jyjgli li a {
+    font-size: 12px;
+    width: 145px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+    color: #fff;
+}
+
+#main_nav li ul.jyjgli li a:hover {
+    color: #FF8F00;
+}
+
+#main_nav li ul.yjjgli li a {
+    font-size: 12px;
+    width: 210px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+    color: #fff;
+}
+
+#main_nav li ul.yjjgli li a:hover {
+    color: #FF8F00;
+}
+
+/*信息门户| 中南e行| 邮件系统| 图书馆| 简| 繁| English*/
+.right-line2 {
+    font-size: 12px;
+    width: 370px;
+    height: 32px;
+    line-height: 32px;
+    /*border: 1px solid green;*/
+    float: right;
+    color: #fff;
+}
+
+.clear {
+    clear: both; /*图像的左右两侧均不允许出现浮动元素*/
+}
+
+/*简| 繁| English*/
+a.lt {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 6px;
+}
+
+a.lt:hover {
+    color: #fe7000;
+}
+
+.search {
+    width: 230px;
+    height: 28px;
+    background: #ffffff;
+    position: absolute;
+    right: 0; /*靠右*/
+    bottom: 10px;
+    left: 220px;
+}
+
+/*导航栏背景*/
+.nam {
+    width: 948px;
+    height: 32px;
+    background: url(../images/nam.jpg) repeat-x; /*1*36*/
+    border-left: #d7d7d7 1px solid;
+    border-right: #d7d7d7 1px solid;
+    margin: 0 auto;
+    padding: 1px 0 3px 0;
+}
+
+/*导航栏内容设置*/
+#nav {
+    width: 943px;
+    height: 32px;
+    padding: 0 0 0 5px;
+    margin: 0;
+    list-style: none;
+}
+
+/*设置下拉菜单*/
+.dropdown {
+    float: left;
+}
+
+/*把a转化为块标签*/
+/*对应 学校概况*/
+.dropdown a {
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 102px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    color: #003174;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none; /*隐藏下拉菜单的内容*/
+    position: absolute;
+    background-color: #f9f9f9;
+    list-style: none;
+    width: 115px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+/*hover设置光标悬停未点击之前的样式*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 0;
+    width: 115px;
+    margin: 0 auto;
+    background: #003174;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: block;
+    width: 115px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.dropdown-content li a:hover {
+    font-weight: 100;
+    color: #FFFF00;
+    text-decoration: none;
+}
+
+/*横幅图片*/
+.banner {
+    width: 950px;
+    height: 266px;
+    margin: 0 auto;
+}
+
+#main {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/*中南要闻*/
+.yaowen {
+    width: 950px;
+    margin: 10px auto 0 auto;
+    font-size: 16px;
+    color: #10368b;
+    font-weight: bold;
+}
+
+.gengduo {
+    background: url(../images/gengduo.jpg) no-repeat;
+    width: 48px;
+    height: 18px;
+}
+
+.xian {
+    background: url(../images/yaowenxian.jpg) repeat-x;
+    height: 3px;
+    margin-top: 7px;
+}
+
+.zhongnanyaowenxiu {
+    height: 180px;
+    background: url(../images/yaowenbg.jpg) no-repeat 0 0;
+    margin: 0 auto;
+    padding-top: 7px;
+    overflow: hidden;
+}
+
+.zhongnanyaowenxiu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.zhongnanyaowenxiu ul li {
+    margin: 0;
+    padding-right: 30px;
+    height: 30px;
+    line-height: 30px; /*180/6=30*/
+    vertical-align: bottom;
+    font-size: 12px;
+    float: left;
+    width: 475px; /*父类main 950*/
+    padding-left: 25px;
+    position: relative;
+    overflow: hidden; /*如06*/
+}
+
+.zhongnanyaowenxiu ul li span {
+    position: absolute; /*行内元素一般与绝对定位合用*/
+    right: 10px;
+    color: #545454;
+    top: 0;
+}
+
+.zhongnanyaowenxiu ul li a {
+    text-decoration: none;
+    color: #545454;
+}
+
+.zhongnanyaowenxiu ul li a:hover {
+    color: #fe7000;
+}
+
+/*底部*/
+#foot {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: #0f70b4;
+    position: fixed;
+    bottom: 0;
+}
+
+.foot {
+    width: 950px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 0;
+    color: #FFFFFF;
+    line-height: 50px;
+}
+
+.foot_l {
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+.foot_m {
+    width: auto;
+    height: 50px;
+    float: left;;
+}
+
+.foot_r {
+    width: auto;
+    height: 50px;
+    float: right;
+    margin-right: 10px;
+}
