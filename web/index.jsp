@@ -377,6 +377,7 @@
         </div>
 
         <br><br><br>
+
         <table class="table table-striped table-bordered" style="margin: 0 auto; width: 800px">
             <tbody id="my_table">
             <%--<tr>--%>
