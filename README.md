@@ -1,4 +1,4 @@
-
+[Web课程设计 - 中南大学主页 - 简书](http://www.jianshu.com/p/711f2ea9b182)
 
 # 实验一
 ## 一、实验内容
@@ -19,19 +19,24 @@ images/favicon.ico  (icon文件在线生成生成器转化图片)
 link也可以链接css文件路径，自定义的css和bootstrap的css；
 - script 写入自己的 js 文件或者 src 链接的 jQuery 文件。
 
-简书代码不能显示 html 的注释 😂
+
 ```html
 <head>
     <title>中南大学</title>
+    <!-- meta 可提供有关页面的元信息（meta-information）-->
     <meta name="keywords" content="中南大学" charset="utf-8"/>
 
+    <!--标题栏图标-->
+    <!--rel, shortcut icon, type-->
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">  <!--快捷方式的图标-->
 
+    <!--css文件-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <script src="js/jquery-3.2.1.min.js"></script>
+
 </head>
 ```
 
@@ -176,7 +181,7 @@ div id = “foot” 对应的CSS
 
 这个菜单基于 html 最原始的标签 ul 的。ul 默认的内容li时竖直排列的，通过设置 ul 和 li 的 float 等属性使得这些 li 标签横向排列。
 
-对应的css
+对应的 css
 - "#nav对应ul
 - .dropdown对应ul下的li
 
@@ -266,11 +271,11 @@ CREATE INDEX fk_sno
 
 ![](http://upload-images.jianshu.io/upload_images/1877813-a8bd5916883dcd12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-在输入框的下面定了一个空的table，用于当查询的时候返回内容。
+在输入框的下面定了一个空的 table，用于当查询的时候返回内容。
 
 ![](http://upload-images.jianshu.io/upload_images/1877813-2f06f4fcb28a0d50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 2.3 Ajax向后端传输数据
+### 2.3 Ajax 向后端传输数据
 
 ```js
 <script>
@@ -310,7 +315,7 @@ CREATE INDEX fk_sno
 
 页面没有刷新，效果很不错。
 
-### 2.4 后端Servlet数据查询
+### 2.4 后端 Servlet 数据查询
 
 ![](http://upload-images.jianshu.io/upload_images/1877813-e1b75762dc92ab4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -395,7 +400,7 @@ doGet 分为以下几步：
 1. 执行 sql 查询得到结果集
 1. 将结果集传回给 temp.jsp 页面
 
-### 2.5 帮助Ajax的temp.jsp
+### 2.5 帮助 Ajax 的 temp.jsp
 temp.jsp 是一个临时的 jsp 文件，用于将执行 sql 返回的结果集转化成列表项，然后这些内容被 index.jsp 预留的 table 添加，从而在主页面异步加载数据。
 
 ```jsp
